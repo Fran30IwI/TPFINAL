@@ -51,3 +51,21 @@ python main.py
 ```
 
 El sistema inicia con **8 juegos** y **2 usuarios** precargados hacer mas facil el probar el codigo.
+
+##  PRUEBAS
+
+### Pruebas Unitarias
+Verifican individualmente cada clase y método.
+
+### Pruebas de Integración
+Comprueban la interacción entre módulos.
+
+### Pruebas de Caja Negra
+Validan entradas y salidas esperadas.
+
+### Pruebas E2E
+Simulan el flujo completo de uso del sistema.
+
+## Ejecución
+
+python -m unittest test_biblioteca.py
