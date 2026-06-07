@@ -69,3 +69,60 @@ Simulan el flujo completo de uso del sistema.
 ## Ejecución
 
 python -m unittest test_biblioteca.py
+
+## 4. Pruebas End-to-End (E2E)
+
+Se aplicaron pruebas E2E automatizadas sobre el flujo completo de BibliotecaSteam. Los escenarios verifican la interacción entre usuarios, juegos y catálogo simulando el uso real de la aplicación.
+
+**Archivo:** `tests/test_e2e.py`
+
+Escenarios:
+- Registro de usuario.
+- Creación de juego.
+- Agregado de juego al catálogo.
+- Asociación de juego a usuario.
+- Consulta de biblioteca.
+- Validación de datos inexistentes.
+- Flujo completo del sistema.
+
+```bash
+python -m pytest -m e2e -v
+```
+
+### 4.1 Documentación
+
+La documentación detallada se encuentra en:
+
+`docs/PRUEBAS_E2E.md`
+
+### Estructura de pruebas
+
+- tests/test_biblioteca.py
+- tests/test_caja_negra.py
+- tests/test_rendimiento.py
+- tests/test_e2e.py
+
+
+## Cobertura de Pruebas
+
+### Pruebas de Caja Negra
+- Usuarios duplicados.
+- Juegos duplicados.
+- Usuario inexistente.
+- Juego inexistente.
+- Juegos repetidos en una biblioteca.
+
+### Pruebas de Rendimiento
+- Busqueda sobre catalogos con miles de videojuegos.
+
+### Pruebas End-to-End (E2E)
+- Registro de usuario.
+- Alta de videojuego.
+- Asociacion de juego a usuario.
+- Consulta de biblioteca.
+- Calculo de valor total.
+
+## Documentacion
+
+- docs/PRUEBAS_E2E.md
+- docs/MATRIZ_PRUEBAS.md

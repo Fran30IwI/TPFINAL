@@ -1,0 +1,4 @@
+2026-05-20 19:15:13,260 - INFO - INICIO DE TEST
+2026-05-20 19:15:13,274 - INFO - TestIntegracion.test_agregar_juego_usuario OK
+2026-05-20 19:15:13,274 - INFO - TestJuego.test_constructor OK
+2026-05-20 19:15:13,274 - INFO - TestUsuario.test_agregar_juego OK
