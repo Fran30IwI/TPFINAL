@@ -126,3 +126,7 @@ La documentación detallada se encuentra en:
 
 - docs/PRUEBAS_E2E.md
 - docs/MATRIZ_PRUEBAS.md
+
+## Entrega tp
+- En el test de Caja Negra cambiamos el self.assureTrue y self.assureFalse
+- Asi quedando ambos en true, esto provoca que el test falle porque esperaba que el método registrar_usuario() devolviera True, pero devolvió False.

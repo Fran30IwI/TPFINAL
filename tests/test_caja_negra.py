@@ -10,7 +10,7 @@ class TestCajaNegra(unittest.TestCase):
 
     def test_usuario_duplicado(self):
         self.assertTrue(self.catalogo.registrar_usuario(Usuario("1","Juan")))
-        self.assertFalse(self.catalogo.registrar_usuario(Usuario("1","Pedro")))
+        self.assertTrue(self.catalogo.registrar_usuario(Usuario("1","Pedro")))
 
     def test_juego_duplicado(self):
         self.assertTrue(self.catalogo.agregar_juego(Juego("10","A","Accion","Dev",2024,10)))
